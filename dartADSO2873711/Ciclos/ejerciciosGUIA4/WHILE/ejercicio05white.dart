@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-//Ejercicio 05 WHITE  
+//Maria Paula Melo Solano- ejercicio05
 /* Obtener el promedio de calificaciones de un grupo de n alumnos*/
 
 //Definir variables
