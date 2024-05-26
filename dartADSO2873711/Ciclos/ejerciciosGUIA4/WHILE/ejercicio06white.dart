@@ -1,8 +1,7 @@
 import 'dart:io';
 
 void main() {
-/*Determinar cuantos hombres
- y cuantas mujeres se encuentran en un grupo de n personas, suponiendo que los datos son extraídos alumno por alumno. */
+/*Calcular el promedio de edades de hombres, mujeres y de todo un grupo de n alumnos.*/
 
 double promedio, promHombres, promMujeres;
 int cantAlumnos, contadorHombres=0, contadorMujeres=0;
