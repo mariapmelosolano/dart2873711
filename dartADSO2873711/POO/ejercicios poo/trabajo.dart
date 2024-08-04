@@ -9,6 +9,7 @@ int edad;
 double salario;
 String puesto;
 String tipoContrato;
+String nuevoPuesto;
  
 while (true) {
   print("¿Desea agregar un empleado? (si/no)");
@@ -26,6 +27,9 @@ while (true) {
     print("Ingrese el puesto del empleado:");
     puesto = stdin.readLineSync()!;
 
+    print("ingrese el nuevo puesto del empleado");
+    nuevoPuesto= stdin.readLineSync()!;
+
     print("Ingrese tipo de contrato (Indefinido/Temporal/Contratista):");
     tipoContrato = stdin.readLineSync()!;
 
@@ -37,7 +41,7 @@ print("*"*50);
     Empleado primerEmpleado = Empleado(nombre, edad, salario, puesto, tipoContrato);
     primerEmpleado.aumentarSalario(10);
     primerEmpleado.cumplirAnios();
-    primerEmpleado.cambiarPuesto("Gerente");
+    primerEmpleado.cambiarPuesto("$nuevoPuesto");
     bonificacion = primerEmpleado.calcularBonificacion();
     print("Bonificación calculada: $bonificacion");
     primerEmpleado.mostrarInformacion();

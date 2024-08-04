@@ -22,12 +22,12 @@ void main () {
     primerEmpleado.mostrarInformacion();
 }
 
-  
-    Empleado primerEmpleado = empleados[0];
-    primerEmpleado.aumentarSalario(10);
-    primerEmpleado.cumplirAnios();
-    primerEmpleado.cambiarPuesto("Gerente");
-    double bonificacion = primerEmpleado.calcularBonificacion();
+    print("Datos originales del empleado:");
+    nuevoEmpleado.mostrarInformacion();
+
+
+    print("Datos actualizados del empleado:");
+    nuevoEmpleado.mostrarInformacion();
     print("Bonificación calculada: $bonificacion");
-    primerEmpleado.mostrarInformacion();
+    print('**************************************************');
   
