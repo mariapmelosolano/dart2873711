@@ -8,22 +8,30 @@ class Empleado {
   Empleado(this.nombre, this.edad, this.salario, this.puesto, this.tipoContrato);
 
   void aumentarSalario(double porcentaje) {
-    salario += salario * (porcentaje / 100);
+    this.salario += this.salario * (1+ porcentaje / 100);
     print("Salario aumentado. Nuevo salario: $salario");
   }
 
-  void cumplirAnios() {
-    edad++;
-    print("$nombre cumple años. Nueva edad: $edad");
+  int cumplirAnios() {
+    this.edad++;
+    print("$nombre Nueva edad: $edad");
+    return this.edad;
   }
 
   void cambiarPuesto(String nuevoPuesto) {
-    puesto = nuevoPuesto;
+    this.puesto = nuevoPuesto;
     print("Nuevo puesto de $nombre: $puesto");
   }
 
   void mostrarInformacion() {
-    print("Nombre: $nombre, Edad: $edad, Salario: $salario, Puesto: $puesto, Tipo de Contrato: $tipoContrato");
+    print("""
+          Nombre: $nombre.
+          Edad: $edad. 
+          Salario: $salario. 
+          Puesto: $puesto. 
+          Tipo de Contrato.
+          $tipoContrato.
+          """);
   }
 
   double calcularBonificacion() {
